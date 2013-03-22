@@ -1,0 +1,86 @@
+ACategory:
+  uncategorized:
+    id: 1
+    name: uncategorized
+  php:
+    id: 2
+    name: php
+  css:
+    id: 3
+    name: css
+  html:
+    id: 4
+    name: html
+  javascript:
+    id: 5
+    name: javascript
+Archive:
+  1:
+    id: 1
+    title: 1st article
+    content: here is the 1st content.
+  2:
+    id: 2
+    title: 2nd article
+    content: and this is another, 2nd content.
+  3:
+    id: 3
+    title: 3rd article, without comment.
+    content: test article without comment.
+Archive_ACategory:
+  1:
+    archive_id: 1
+    acat_id: 2
+  2:
+    archive_id: 1
+    acat_id: 3
+  3:
+    archive_id: 2
+    acat_id: 2
+  4:
+    archive_id: 2
+    acat_id: 4
+  5:
+    archive_id: 2
+    acat_id: 5
+  6:
+    archive_id: 3
+    acat_id: 1
+AComment:
+  1:
+    id: 1
+    archive_id: 1
+    content: 1st comment of 1st archive
+  2:
+    id: 2
+    archive_id: 1
+    content: 2nd comment of 1st archive
+  3:
+    id: 3
+    archive_id: 1
+    content: 3rd comment of 1st archive
+  4:
+    id: 4
+    archive_id: 2
+    content: 1st comment of 2nd archive
+  5:
+    id: 5
+    archive_id: 2
+    content: 2nd comment of 2nd archive
+  6:
+    id: 6
+    archive_id: 1
+    content: 4th comment of 1st archive
+ACommentQuote:
+  1:
+    id: 1
+    comment_id: 1
+    content: 1st quote of 1st comment of 1st archive
+  2:
+    id: 2
+    comment_id: 1
+    content: 2nd quote of 1st commtent of 1st archive
+  3:
+    id: 3
+    comment_id: 5
+    content: 1st quote of 2nd comment of 2nd archive

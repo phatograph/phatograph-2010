@@ -1,0 +1,170 @@
+archive:
+  connection: default
+  tableName: archive
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+      notnull: true
+      unsigned: true
+    title:
+      type: string(255)
+      notnull: true
+      unsigned: true
+    content:
+      type: clob()
+      notnull: true
+      unsigned: true
+  relations:
+    ACategories:
+      refClass: Archive_ACategory
+      class: ACategory
+      local: archive_id
+      foreign: acat_id
+      type: many
+    Archive_ACategory:
+      local: id
+      foreign: archive_id
+      type: many
+archive_acategory:
+  connection: default
+  tableName: archive_acategory
+  columns:
+    acat_id:
+      primary: true
+      type: integer(4)
+      notnull: true
+      unsigned: true
+    archive_id:
+      primary: true
+      type: integer(4)
+      notnull: true
+      unsigned: true
+email:
+  connection: default
+  tableName: email
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+      notnull: true
+      unsigned: true
+    user_id:
+      type: integer(4)
+      notnull: true
+      unsigned: true
+    address:
+      type: string(255)
+      notnull: true
+      unsigned: true
+  relations:
+    User:
+      local: user_id
+      foreign: id
+      type: one
+group:
+  connection: default
+  tableName: groups
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+      notnull: true
+      unsigned: true
+    name:
+      type: string(255)
+      notnull: true
+      unsigned: true
+  relations:
+    Users:
+      refClass: UserGroup
+      class: User
+      local: group_id
+      foreign: user_id
+      type: many
+    UserGroup:
+      local: id
+      foreign: group_id
+      type: many
+phonenumber:
+  connection: default
+  tableName: phonenumber
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+      notnull: true
+      unsigned: true
+    user_id:
+      type: integer(4)
+      notnull: true
+      unsigned: true
+    phonenumber:
+      type: string(255)
+      notnull: true
+      unsigned: true
+    primary_num:
+      type: boolean(25)
+      notnull: true
+      unsigned: true
+  relations:
+    User:
+      local: user_id
+      foreign: id
+      type: one
+user:
+  connection: default
+  tableName: user
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+      notnull: true
+      unsigned: true
+    username:
+      type: string(255)
+      notnull: true
+      unsigned: true
+    password:
+      type: string(255)
+      notnull: true
+      unsigned: true
+  relations:
+    Groups:
+      refClass: UserGroup
+      class: Group
+      local: user_id
+      foreign: group_id
+      type: many
+    Email:
+      local: id
+      foreign: user_id
+      type: one
+    Phonenumbers:
+      class: Phonenumber
+      local: id
+      foreign: user_id
+      type: many
+    UserGroup:
+      local: id
+      foreign: user_id
+      type: many
+usergroup:
+  connection: default
+  tableName: user_group
+  columns:
+    user_id:
+      type: integer(4)
+      primary: true
+      notnull: true
+      unsigned: true
+    group_id:
+      type: integer(4)
+      primary: true
+      notnull: true
+      unsigned: true

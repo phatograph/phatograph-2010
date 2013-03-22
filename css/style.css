@@ -1,0 +1,294 @@
+.container
+{
+    width: 950px;
+    margin: 0 auto;
+}
+
+.wrapper
+{
+    padding-top: 70px;
+}
+
+.siteinfo
+{
+    width: 550px;
+    float: left;
+}
+.siteinfo a:link, .siteinfo a:visited
+{
+    outline-style: none;
+}
+.siteinfo h1
+{
+    background-image: url('../images/phatograph-logo2.jpg');
+    background-repeat: no-repeat;
+    height: 257px;
+    text-indent: -99999px;
+}
+.siteinfo h1 .subh1
+{
+    border:medium none;
+    bottom:-31px;
+    font-family:'BPscriptRegular', helvetica,arial;
+    font-size:33px;
+    position:absolute;
+    right:152px;
+}
+.siteinfo .content
+{
+    padding-left: 13px;
+    margin-top:-53px;
+}
+.siteinfo .content h2
+{
+    font-family:Helvetica,Arial;
+    font-weight:bold;
+    font-size: 15px;
+    line-height:1.15em;
+    width: 170px;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+}
+.siteinfo .content h3
+{
+    font-family:Helvetica,Arial;
+    width: 400px;
+    font-weight: normal;
+    letter-spacing: 1px
+}
+.siteinfo .content h3 a
+{
+    font-weight: bold;
+}
+.siteinfo .content h3 a:link,
+.siteinfo .content h3 a:visited
+{
+    color: #000;
+}
+.siteinfo .content h3 a:hover,
+.siteinfo .content h3 a:active
+{
+    color: #777;
+}
+.siteinfo .content .port h3.port
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #777;
+}
+.siteinfo .content h3.about p
+{
+    padding-bottom: 10px;
+}
+.siteinfo .content h3.contact
+{
+    padding-bottom: 10px;
+}
+.siteinfo .content h3.contact span
+{
+    font-size: 10px;
+    padding-right: 5px;
+}
+.siteinfo .content .port h4
+{
+    width: 274px;
+    padding-right: 15px;
+    margin-right: 10px;
+    border-right: 1px solid #eee;
+    float: left;
+    font-weight: normal;
+    min-height: 65px;
+}
+.siteinfo .content .port h4 p
+{
+    font-size: 11px;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+.siteinfo .content .port h4 p a
+{
+    font-size: 11px;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.siteinfo .content .port h4 p a:link,
+.siteinfo .content .port h4 p a:visited
+{
+    color: #000;
+}
+.siteinfo .content .port h4 p a:hover,
+.siteinfo .content .port h4 p a:active
+{
+    color: #777;
+}
+.siteinfo .content .port .text
+{
+    padding-bottom: 20px;
+}
+.siteinfo .content .port .text .info,
+.siteinfo .content .port .text .info .line
+{
+    width: 235px;
+    float: left;
+}
+.siteinfo .content .port .text .info .line .left,
+.siteinfo .content .port .text .info .line .right
+{
+    font-size: 10px;
+    color: #bbb;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+}
+.siteinfo .content .port .text .info .line .left
+{
+    width: 65px;
+    padding-right: 10px;
+    float: left;
+    font-weight: bold;
+    text-align: right;
+}
+.siteinfo .content .port .text .info .line .right
+{
+    width: 160px;
+    float: left;
+}
+.siteinfo .content .port .text .info .line .right a
+{
+    font-size: 10px;
+    line-height: 1.25em;
+}
+.siteinfo .content .port .text .info .line .right a:link,
+.siteinfo .content .port .text .info .line .right a:visited
+{
+    color: #777;
+}
+.siteinfo .content .port .text .info .line .right a:hover,
+.siteinfo .content .port .text .info .line .right a:active
+{
+    color: #333;
+}
+.siteinfo .content .port .images .imgbox
+{
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+}
+
+.menu
+{
+    width: 310px;
+    float: left;
+    padding-top: 40px;
+}
+.menu .menubox
+{
+    padding-left: 10px;
+    border-bottom: 1px dashed #ddd;
+}
+.menu .menubox,
+.menu .menubox .submenu
+{
+    width: 300px;
+    float: left;
+}
+.menu .menubox > a
+{
+    font-family: Helvetica, Arial;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: block;
+    height: 2em;
+    line-height: 2em;
+    outline-style: none;
+    width: 170px;
+    float: left;
+}
+.menu .menubox .info
+{
+    float: left;
+    font-size: 10px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 4em;
+    width: 110px;
+    text-align: right;
+    opacity: 0;
+}
+.menu .menubox .submenu ul
+{
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+.menu .menubox .submenu ul li
+{
+    list-style-image: url('../images/shared/bullet-arrow.png');
+    padding-left: 5px;
+    line-height: 1.35em
+}
+.menu .menubox .submenu ul li a
+{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.footer
+{
+    border-top:1px dashed #DDDDDD;
+    line-height:1.15em;
+    padding-top: 10px;
+    margin-top:50px;
+    text-align:center;
+}
+.footer .content, .footer .subs
+{
+    font-family: Helvetica, Arial;
+}
+.footer .content
+{
+    font-weight: bold;
+    font-size: 10px;
+}
+.footer .subs
+{
+    font-size: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Pincoyablack';
+    src: url('../type/PincoyaBlack-fontfacekit/pincoyablack.eot');
+    src: local('Pincoyablack Black'), local('Pincoyablack-Black'), url('../type/PincoyaBlack-fontfacekit/pincoyablack.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BPscriptRegular';
+    src: url('../type/BPscript-fontfacekit/BPscript.eot');
+    src: local('BPscript Regular'), local('BPscript'), url('../type/BPscript-fontfacekit/BPscript.ttf') format('truetype');
+}
